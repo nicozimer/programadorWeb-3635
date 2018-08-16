@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+    
+
+}
+
+
+.lista {
+    float: left;
+    width: 520px;
+    margin-left: 100px;
+    
+}
+
+.izq {
+    text-align: center;
+}
+
+.ingreso {
+    float: right;
+    width: 520px;
+    margin-right: 100px;
+    
+}
+
+.der {
+    text-align: center;
+}
+
+
+.nombre {
+    border: 0.5px solid #ced4da;
+    border-radius: 5px ;
+    padding: 5px;
+    color: #868e95;
+    width: 245px;
+    float: left;
+    margin-bottom: 10px;
+      
+}
+
+.apellido {
+    border: 0.5px solid #ced4da;
+    border-radius: 5px ;
+    padding: 5px;
+    color: #868e95;
+    width: 245px;
+    float: right;
+    margin-bottom: 10px;
+    
+}
+
+.dni {
+    border: 0.5px solid #ced4da;
+    border-radius: 5px ;
+    padding: 5px;
+    color: #868e95;
+    width: 245px;
+    float: left;
+    margin-bottom: 10px;
+
+}
+
+.mail {
+    border: 0.5px solid #ced4da;
+    border-radius: 5px ;
+    padding: 5px;
+    color: #868e95;
+    width: 245px;
+    float: right;
+    margin-bottom: 10px;
+
+    
+}
+
+.agregar {
+    border: 0.5px solid #6facfd;
+    border-radius: 5px ;
+    padding: 5px;
+    color: white;
+    background-color: #6facfd;
+    text-align: center;
+    clear: both;
+    margin-bottom: 10px;
+    
+}
+
+.dni2 {
+    border: 0.5px solid #ced4da;
+    border-radius: 5px ;
+    padding: 5px;
+    color: #868e95;
+    width: 245px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.eliminar {
+    border: 0.5px solid #ea8189;
+    border-radius: 5px ;
+    padding: 5px;
+    color: white;
+    width: 245px;
+    background-color: #ea8189;
+    text-align: center;
+    float: right;
+    margin-bottom: 10px;
+
+    
+}
+
+.nombre2 {
+    border: 0.5px solid #ced4da;
+    border-radius: 5px ;
+    padding: 5px;
+    color: #868e95;
+    width: 245px;
+    float: left;
+      
+}
+
+.buscar {
+    border: 0.5px solid #30a64a;
+    border-radius: 5px ;
+    padding: 5px;
+    color: white;
+    width: 245px;
+    background-color: #30a64a;
+    text-align: center;
+    float: right;
+
+    
+}
+
+
