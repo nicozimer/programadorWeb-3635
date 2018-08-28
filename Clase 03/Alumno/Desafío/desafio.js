@@ -1,16 +1,34 @@
 
-var operacion = prompt('ingrese la operacion a ralizar: sum,res, mul o div')
 
-// parsear la operacion
+var operation = prompt ('Ingrese la operacion a realizar')
 
-var primerPar = prompt('ingrese el primer numero')
+var number = prompt ('Ingrese un numero')
 
-// parsear la operacion
 
 do{
-    var segundoPar = prompt('ingrese el segundo numero')
-} while {
-    if (operacion===div&&segundoPar===0)
-// } tengo hacer que si es o siga el prompt hasta que ponga algo diferente y ahi si me deje hacer la operacion
+    number2 = prompt ('Ingrese otro numero')
+  
+  }while(operation === 'division' && number2 === '0')
 
-switch 
+var parsedNumber = parseInt (number, 10)
+
+var parsedNumber2 = parseInt (number2, 10)
+
+  switch (operation) {
+      case 'suma':
+      console.log(parsedNumber + parsedNumber2)
+      break
+
+      case 'resta':
+      console.log(parsedNumber - parsedNumber2)
+      break 
+
+      case 'multiplicacion':
+      console.log(parsedNumber * parsedNumber2)
+      break
+
+      case 'division':
+      console.log(parsedNumber / parsedNumber2)
+      break
+
+  }
