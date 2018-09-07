@@ -1,15 +1,11 @@
-var testList = ['CARLOS','GERONIMO','NICOLAS','LUCAS']
+var nombres = [ 'Juan', 'Pedro', 'María' ]
 
-localStorage.setItem('userName', testList)
+sessionStorage.setItem('List', nombres)
 
-if (Array.isArray(testList){
-  
-  var savedUserNames = localStorage.getItem('userName')
+localStorage.setItem('List', nombres)
 
-  var stringifyUsernames = JSON.stringify(savedUserNames)
+// var nombres = localStorage.getItem('List')
 
-  localStorage.setItem('userName', stringifyUsernames)
+// console.log(nombres)
 
-  } else {
-    var nameList = []
-  }
+// localStorage.removeItem('List')
