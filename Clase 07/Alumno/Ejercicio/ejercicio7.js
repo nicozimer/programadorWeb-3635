@@ -1,11 +1,41 @@
-var nombres = [ 'Juan', 'Pedro', 'María' ]
+// var nombres = [ 'Juan', 'Pedro', 'María' ]
 
-sessionStorage.setItem('List', nombres)
+// sessionStorage.setItem('List', nombres)
 
-localStorage.setItem('List', nombres)
+// localStorage.setItem('List', nombres)
 
-// var nombres = localStorage.getItem('List')
+// var obj = {
+//     firstName: 'Adrián',
+//     lastName: 'Ferré',
+//     age: 29
+//   }
+  
+//   var stringifiedObj = JSON.stringify(obj)
+  
+//   console.log(stringifiedObj)
 
-// console.log(nombres)
+//   var obj = {
+//     firstName: 'Adrián',
+//     lastName: 'Ferré',
+//     age: 29
+//   }
+  
+//   var stringifiedObj = JSON.stringify(obj)
+  
+//   var parsedObj = JSON.parse(stringifiedObj)
+  
+//   console.log(parsedObj)
 
-// localStorage.removeItem('List')
+console.log('hola')
+
+var testList = ['CARLOS','GERONIMO','NICOLAS','LUCAS']
+
+function saveArray (key,array) {
+    if (typeof key === 'string' && Array.isArray(array)) {
+        var stringifiedArray = JSON.stringify(array)
+        localStorage.setItem(key, stringifiedArray)
+    }
+    
+}
+
+saveArray('students',testList)
