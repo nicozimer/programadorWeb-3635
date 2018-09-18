@@ -58,6 +58,31 @@ function addStudent () {
   dniNode.classList.remove('is-valid')
 }
 
+// Eliminar un Estudiante
+
+var dniDeleteNode = document.getElementById('deleteDni')
+
+dniDeleteNode.onblur = validateDniDelete
+
+function validateDniDelete (event) {
+  var deleteStudentButtonNode = document.getElementById('deleteStudentButton')
+  var inputNode = event.target
+
+  var index = searchStudentIndexByDni(inputNode.value, studentsList)
+
+  if (index > -1) {
+    deleteStudentButtonNode.disabled = false
+  } else {
+    deleteStudentButtonNode.disabled = true
+  }
+}
+
+var deleteStudentButtonNode = document.getElementById('deleteStudentButton')
+
+deleteStudentButtonNode.onclick = deleteStudent
+
+function deleteStudent () {}
+
 // Funciones auxiliares
 
 function searchStudentIndexByDni (dni, studentsList) {
