@@ -4,10 +4,10 @@ $(document).ready(function () {
   // - 15.1 Efectos y animaciones
   //  - `.show()`
 
-  // $('#cover1').show(1000, function () {
-  //   console.log('Finalizó de mostrarse')
-  //   $(this).hide(1000)
-  // })
+  $('#cover1').show(1000, function () {
+    console.log('Finalizó de mostrarse')
+    $(this).hide(1000)
+  })
 
   //  - `.hide()`
 
@@ -52,25 +52,25 @@ $(document).ready(function () {
   //   // }
   // )
 
-  var coverNode = $('#covers')
+//   var coverNode = $('#covers')
 
-  var coversPosition = coverNode.position()
+//   var coversPosition = coverNode.position()
 
-  var coversTopPosition = coversPosition.top
+//   var coversTopPosition = coversPosition.top
 
-  $(window).scroll(function () {
-    var scrollTop = $(this).scrollTop()
+//   $(window).scroll(function () {
+//     var scrollTop = $(this).scrollTop()
 
-    if (scrollTop > coversTopPosition - 200) {
-      coverNode.addClass('covers-show')
-      coverNode.removeClass('covers-hide')
-    } else if (scrollTop <= coversTopPosition - 200) {
-      coverNode.removeClass('covers-show')
-      coverNode.addClass('covers-hide')
-    }
-  })
-})
+//     if (scrollTop > coversTopPosition - 200) {
+//       coverNode.addClass('covers-show')
+//       coverNode.removeClass('covers-hide')
+//     } else if (scrollTop <= coversTopPosition - 200) {
+//       coverNode.removeClass('covers-show')
+//       coverNode.addClass('covers-hide')
+//     }
+//   })
+// })
 
 // $(document).ready(function () {
 //   $('#').hide(2000, function () {})
-// })
+//
