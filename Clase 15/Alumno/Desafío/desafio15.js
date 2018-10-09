@@ -1,9 +1,27 @@
-$(document).ready(function () {
-  var AjaxCall = $.ajax('https://swapi.co/api/people/')
+function getData (url, cbk) {
+  $.ajax(url)
     .done(function (data) {
-      console.log('Los personajes son', data)
+      cbk(null, data)
     })
     .fail(function (error) {
-      console.log('Falló algo ', error)
+      cbk(error)
     })
-})
+}
+
+getData('https://swapi.co/api/people/', showPeople)
+
+function showPeople (error, data) {
+  if (error) {
+    console.log('Falló algo ', error)
+  } else {
+    var personajes = data.results
+
+    var personaje
+
+    for (var i = 0; i < personajes.length; i++) {
+      personaje = personajes[i]
+
+      console.log(personaje.name)
+    }
+  }
+}
